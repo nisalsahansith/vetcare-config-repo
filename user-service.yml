@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/vetcare
     username: postgres
-    password: YOUR_PASSWORD
+    password: nisal1234
 
   jpa:
     hibernate:
