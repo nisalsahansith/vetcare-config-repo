@@ -1,0 +1,20 @@
+server:
+  port: 8084
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/vetcare_medical_records
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
