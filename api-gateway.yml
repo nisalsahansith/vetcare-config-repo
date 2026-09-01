@@ -4,6 +4,22 @@ server:
 spring:
   cloud:
     gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins:
+              - "https://vetcare-frontend-711123911666.asia-southeast1.run.app"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - PATCH
+              - OPTIONS
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
       routes:
         - id: user-service
           uri: lb://USER-SERVICE
