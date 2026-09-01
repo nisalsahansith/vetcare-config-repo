@@ -10,7 +10,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://10.10.0.25:8761/eureka/,http://10.10.0.23:8761/eureka/,http://10.10.0.24:8761/eureka/
+      defaultZone: http://10.10.0.10:8761/eureka/
 gcp:
   storage:
     bucket-name: vetcare-files-project-e9fb8820-8459-4622-9e9
